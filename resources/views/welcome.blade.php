@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>فندق الراية | المنيو</title>
+    <title> {{ $option->site_name }} | المنيو</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -56,7 +56,7 @@
                 <div class="col-md-7 col-12">
                     <div class="box-hero-top text-center">
                         <img src="{{asset('images/settings/'.$option->logo)}}" height="70px" alt="">
-                        
+
 
                         @if($option->social_status == 'active')<div class="social-links d-flex justify-content-center mt-3">
                             <a href="{{ $option->twitter }}" class="d-flex align-items-center justify-content-center"><i
