@@ -55,8 +55,8 @@
             <div class="row d-flex align-items-center justify-content-center ">
                 <div class="col-md-7 col-12">
                     <div class="box-hero-top text-center">
-                        <img src="{{ asset('front/assets/img/alrayah_logo.svg') }}" height="70px" alt="">
-                        <img src="{{ asset('front/assets/img/cafi-logo.png') }}" height="70px" alt="">
+                        <img src="{{asset('images/settings/'.$option->logo)}}" height="70px" alt="">
+                        
 
                         @if($option->social_status == 'active')<div class="social-links d-flex justify-content-center mt-3">
                             <a href="{{ $option->twitter }}" class="d-flex align-items-center justify-content-center"><i
