@@ -3,9 +3,9 @@
 @section('styles')
 <link href="{{asset('dashboard/assets/libs/magnific-popup/magnific-popup.css')}}" rel="stylesheet" type="text/css" />
         <link href="{{asset('dashboard/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css')}}" rel="stylesheet" type="text/css">
-        
+
         <link href="{{asset('dashboard/assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css')}}" rel="stylesheet" type="text/css">
-        
+
         <link href="{{asset('dashboard/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css')}}" rel="stylesheet" type="text/css">
 @endsection
 @section('content')
@@ -25,9 +25,9 @@
             <tbody>
                 @foreach($sections as $key => $section)
                 @php
-                
+
                  $sec = app()->getLocale()=='ar' ? $section->parent->ar_name:$section->parent->en_name;
-                
+
                 @endphp
                 <tr>
                     <td>{{ $key+=1 }}</td>
@@ -71,18 +71,26 @@
 
         <!-- Tour init js-->
         <script src="{{asset('dashboard/assets/js/pages/lightbox.init.js')}}"></script>
-        
+
         <script src="{{ asset('dashboard/assets/libs/datatables.net/js/jquery.dataTables.min.js') }}"></script>
 <script src="{{ asset('dashboard/assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
 <script src="{{ asset('dashboard/assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js') }}"></script>
 <script src="{{ asset('dashboard/assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js') }}"></script>
 <script src="{{ asset('dashboard/assets/libs/jszip/jszip.min.js') }}"></script>
-<script src="{{ asset('dashboard/assets/libs/pdfmake/build/pdfmake.min.js') }}"></script>
-<script src="{{ asset('dashboard/assets/libs/pdfmake/build/vfs_fonts.js') }}"></script>
+
+
+
+<script src="{{ asset('dashboard/assets/libs/pdfmake/app/build/pdfmake.min.js') }}"></script>
+<script src="{{ asset('dashboard/assets/libs/pdfmake/app/build/vfs_fonts.js') }}"></script>
+
+
 <script src="{{ asset('dashboard/assets/libs/datatables.net-buttons/js/buttons.html5.min.js') }}"></script>
 <script src="{{ asset('dashboard/assets/libs/datatables.net-buttons/js/buttons.print.min.js') }}"></script>
 <script src="{{ asset('dashboard/assets/libs/datatables.net-buttons/js/buttons.colVis.min.js') }}"></script>
 <script src="{{ asset('dashboard/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js') }}"></script>
 <script src="{{ asset('dashboard/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js') }}"></script>
 <script src="{{ asset('dashboard/assets/js/pages/datatables.init.js') }}"></script>
+
+
+
 @endsection
