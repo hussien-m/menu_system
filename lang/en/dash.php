@@ -19,8 +19,6 @@ return [
     'meals'     => 'Meals',
     'add-meals'     => 'Add Meals',
     'meals-view'     => 'Meals View',
-    'hotel'     => 'Hotel',
-    'alrayah'     => 'Alrayah',
     'more'     => 'more',
     'account'     => 'My Account',
     'logout'     => 'Logout',
