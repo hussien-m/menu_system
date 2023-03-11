@@ -99,9 +99,9 @@
                         <div class="col-12">
                             © <script>
                                 document.write(new Date().getFullYear())
-                            </script><span class="d-none d-sm-inline-block"> -  @lang('dash.hotel') <i
+                            </script><span class="d-none d-sm-inline-block"> -  @lang('dash.oia-beach') <i
                                     class="mdi mdi-heart text-danger"></i><a href="{{url('/')}}" target="_blank">
-                                        @lang('dash.alrayah')</a></span>
+                                        </a></span>
                         </div>
                     </div>
                 </div>

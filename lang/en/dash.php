@@ -3,6 +3,7 @@
 return [
 
     'main-menu' => 'Main Menu',
+    'oia-beach'      => 'Oia Beach',
     'dash' => 'Dashboard',
     'control-panel'  => 'Control Panel',
     'management'     => 'Management',

@@ -18,13 +18,12 @@ return [
     'meals'     => 'الوجبات',
     'add-meals'     => 'اضف وجبة',
     'meals-view'     => 'عرض الوجبات',
-    'hotel'     => 'فندق',
-    'alrayah'     => 'الراية',
+    'oia-beach'      => 'اويا بيتش',
     'more'     => 'المزيد',
     'account'     => 'حسابي',
     'logout'     => 'تسجيل الخروج',
     'edit'     => 'تعديل',
-    
+
      'store-success'     => 'تمت الاضافة بنجاح',
     'edit-success'     => 'تم التعديل بنجاح',
     'delete-success'     => 'تم الحذف بنجاح',
