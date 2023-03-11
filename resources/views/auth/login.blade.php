@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en" dir="app()->getLocale() == 'ar' ? 'rtl':'ltr' ">
+<html lang="app()->getLocale() == 'ar' ? 'ar':'en' " dir="app()->getLocale() == 'ar' ? 'rtl':'ltr' ">
 
     <head>
 
@@ -12,7 +12,7 @@
         <!-- App favicon -->
         <link rel="shortcut icon" href="{{ asset('dashboard/assets/images/favicon.ico') }}">
 
-        
+
         @if(app()->getLocale() == 'ar')
 
         <!-- Bootstrap Css -->
@@ -21,18 +21,18 @@
         <link href="{{ asset('dashboard/assets/css/icons-rtl.min.css') }}" rel="stylesheet" type="text/css">
         <!-- App Css-->
         <link href="{{ asset('dashboard/assets/css/app-dark-rtl.min.css') }}" id="app-style" rel="stylesheet" type="text/css">
-        
+
         @else
-        
+
         <!-- Bootstrap Css -->
         <link href="{{ asset('dashboard/assets/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet" type="text/css">
         <!-- Icons Css -->
         <link href="{{ asset('dashboard/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css">
         <!-- App Css-->
         <link href="{{ asset('dashboard/assets/css/app-dark.min.css') }}" id="app-style" rel="stylesheet" type="text/css">
-        
+
         @endif
-        
+
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,8 +50,8 @@
         <div class="home-btn  d-sm-block">
              @if(app()->getLocale() == 'en')
                 <a href="{{ LaravelLocalization::getLocalizedURL('ar') }}" class="text-dark">العربية</a>
-             @endif             
-             
+             @endif
+
              @if(app()->getLocale() == 'ar')
                 <a href="{{ LaravelLocalization::getLocalizedURL('en') }}" class="text-dark">English</a>
              @endif
@@ -83,7 +83,7 @@
                                         @csrf
                                         <div class="mb-3">
                                             <label class="form-label" for="username"> {{ app()->getLocale() == 'ar' ? 'البريد الاللكتروني' : 'Email Address' }} </label>
-                                            
+
                                             <input type="text" name="email" class="form-control" id="username" placeholder="">
                                         </div>
 
@@ -112,7 +112,7 @@
                         </div>
 
                         <div class="mt-5 text-center">
-                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> @if(app()->getLocale() == 'en') @lang('dash.alrayah')  @lang('dash.hotel') @else @lang('dash.hotel') @lang('dash.alrayah')   @endif  <i class="mdi mdi-heart text-danger"></i> </p>
+                            <p class="mb-0">© <script>document.write(new Date().getFullYear())</script>    @lang('dash.oia-beach')  <i class="mdi mdi-heart text-danger"></i> </p>
                         </div>
 
 
